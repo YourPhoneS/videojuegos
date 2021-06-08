@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.mw {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+.header {
+    width: 100%;
+    padding: 0px 0;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #d4d4d4; 
+    text-align: center;
+}
+.header img {
+    width: 100px;
+    height: 100px;
+}
+#a {
+    text-decoration: none;
+}
+.banner {
+    width: 100%;
+    padding: 40px 40px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-shadow: 0 0 10px #f0f0f0;
+}
+.block-body {
+    width: 100%;
+}
+.bk img {
+    grid-area: img;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.block-body button {
+    width: 260px;
+    height: 50px;
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    cursor: pointer; 
+    font-weight: 900;
+    color: #333;
+}
+.n2 {
+    background-color: #ffca39;
+}
+.title {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #666;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+.name-apartado {
+    font-size: 26px;
+    color: #444;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin: 70px 0 20px 0;
+}
+.line {
+    width: 100%;
+    height: 2px;
+    background: rgb(255, 216, 109);
+    margin-bottom: 20px;
+}
+.productos {
+    width: 100%;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.product {
+    width: 100%;
+    padding: 10px;
+}
+.product img {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 5px;
+    object-fit: contain;
+}
+.product a {
+    font-size: 16px;
+    color: rgba(36, 46, 58, 0.842);
+    text-transform: capitalize;
+}
+.color {
+    margin: 7px 0 1px 0;
+    color: #222;
+}
+.precio {
+    color: red;
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 15px;
+}
+.footer {
+    width: 100%;
+    padding: 80px 0;
+    background: #464f59;
+    margin-top: 80px;
+    text-align: center;
+}
+.c2 {
+    color: #f0f0f0e7;
+    margin-bottom: 20px;
+}
+.redes {
+    margin-bottom: 30px;
+}
+.redes img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+.copy {
+    color: #f0f0f0e7;
+}
+.btn-all button {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 202, 57);
+    text-transform: capitalize;
+    margin-top: 10px;
+    cursor: pointer;
+    color: rgba(49, 49, 49, 0.815);
+}
+.btn-all {
+    text-decoration: none;
+}
+.name {
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.c2 {
+    color: #f0f0f0e7;
+    margin-bottom: 20px;
+}
+span {
+    padding: 0 7px;
+    margin: 0 0 0 2px;
+    border-radius: 100%;
+}
+.pink {
+    background: #ff92a4;
+}
+.blue {
+    background-color: rgb(11, 102, 129);
+}
+.f {
+    background-color: #fff;
+    border: 1px solid #979797;
+}
+.black {
+    background: #111;
+}
+.grey {
+    background-color: #505050;
+}
+.morado {
+    background-color: rgb(75, 10, 75);
+}
+.gris-m {
+    background-color: #cbcbd4;
+    border: 1px solid #aaaaaa;
+
+}
+.red {
+    background-color: rgb(78, 6, 6);
+}
+.golden {
+    background-color: rgb(185, 158, 0);
+}
+.vr {
+    background-color: rgb(25, 107, 25);
+}
+.tur {
+    background-color: rgb(0, 163, 141);
+}
+.pink, .blue, .black, .morado, .grey, .red, .golden, 
+.vr, .tur {
+    border: 1px solid transparent;
+}
+
+@media screen and (max-width: 920px) {
+
+    .block-body {
+        grid-area: body;
+    }
+    .banner {
+        grid-template-columns: 100%;
+        grid-template-areas: 'img'
+                             'body';
+    }
+    .productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .block-body button {
+        margin: 0 auto 5px auto;
+    }
+    .bk img {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 630px) {
+
+   
+    .b1 button {
+        margin: auto;
+    }
+    .b1 .title {
+        text-align: center;
+    }
+    .b1 {
+        background-size: contain;
+    }
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .banner {
+        text-align: center;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 465px) {
+
+    .b1 .title span {
+        display: none;
+    }
+    .name-apartado {
+        text-align: center;
+    }
+    .productos {
+        grid-template-columns: 100%;
+    }
+
+}
+
+
